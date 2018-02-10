@@ -28,3 +28,5 @@
 #define HAS_SYSVTTY		/* <termio.h>				*/
 #define HAS_TERMCAP		/* tgetxxx( )				*/
 #define HAS_TERMREAD		/* Has "read" syscall from terminals	*/
+
+#undef  HAS_UNIX_SEGMENT_HACK

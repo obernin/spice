@@ -29,6 +29,13 @@ static void adddeglabel(), addradlabel();
 
 typedef enum { x_axis, y_axis } Axis;
 
+static drawlingrid(GRAPH *graph, char units[16], int spacing, int nsp,
+		double dst, double lmt, double hmt, bool onedec, int mult, double mag,
+		int digits, Axis axis);
+static drawloggrid(GRAPH *graph, char *units, int hmt, int lmt, int decsp,
+		int subs, int pp, Axis axis);
+
+
 /* note: scaleunits is static and never changed in this file
     ie, can get rid of it */
 static bool scaleunits = true;

@@ -272,7 +272,7 @@ getsubject(place)
     return (copy(&buf[9]));     /* don't copy "SUBJECT: " */
 }
 
-static void
+void
 sortlist(tlp)
     toplink **tlp;
 {
@@ -295,7 +295,7 @@ sortlist(tlp)
     return;
 }
 
-static int
+int
 sortcmp(tlp1, tlp2)
     toplink **tlp1, **tlp2;
 {
@@ -320,7 +320,7 @@ hlp_free()
     return;
 }
 
-static void
+void
 tlfree(tl)
     toplink *tl;
 {

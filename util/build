@@ -59,7 +59,7 @@ if test "x$1" = "x-help"; then
 	echo "	-D	Show shell commands executed by build (do set -v)"
 	echo Systems:
 	ls ${CONF_DIR} | sed '/defaults/d' | $fmt | sed 's/^/	/'
-	echo Targerts:
+	echo Targets:
 	ls ${SKEL_DIR}/*.bld | sed -e 's@^.*/@@g' -e 's/.bld//g' | \
 		$fmt | sed 's/^/	/'
         exit 0
@@ -70,7 +70,7 @@ if test "x$1" = "x-l"; then
 		echo "	"`basename $name`"      	"`head -1 $name |\
 			sed 's/#/:/'`
 	done
-	echo Targerts:
+	echo Targets:
 	for name in ${SKEL_DIR}/*.bld; do
 		case "$name" in
 		default)

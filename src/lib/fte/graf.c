@@ -52,6 +52,10 @@ double *readtics();
 #define XFACTOR 2       /* How much to expand the X scale during iplot. */
 #define YFACTOR 1.5     /* How much to expand the Y scale during iplot. */
 
+/* Forward declarations */
+static drawlegend(GRAPH *graph, int plotno, struct dvec *dv);
+static gr_resize_internal(GRAPH *graph);
+
 /*
  *  Start of a new graph.
  *  Fill in the data that gets displayed.

@@ -1,0 +1,5 @@
+# General Linux
+
+SYS_CFLAGS	= -Dlinux
+
+LDFLAGS		= -lm -ltermcap

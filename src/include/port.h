@@ -66,6 +66,11 @@ Copyright 1990 Regents of the University of California.  All rights reserved.
 #  define CONFIGURED
 #endif
 
+#ifdef linux
+#  include "os_linux.h"
+#  define CONFIGURED
+#endif
+
 #ifndef CONFIGURED
 
 error error error error

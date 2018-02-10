@@ -41,6 +41,10 @@ extern void handlebuttonev(), handlekeypressed(), killwin(), hardcopy(),
 	    redraw(), resize();
 int errorhandler();
 
+static initlinestyles();
+static initcolors(GRAPH *graph);
+static X_ScreentoData(GRAPH *graph, int x, int y, double *fx, double *fy);
+
 #define RAD_TO_DEG	(180.0 / M_PI)
 
 /* X dependent default parameters */

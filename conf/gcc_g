@@ -1,0 +1,7 @@
+# For use with gcc to produce debugging information; 
+# Use "build <system> gcc_g"
+
+CC		= gcc
+CC_OPT		= -ggdb
+CC_OPT_SAFE	= -ggdb
+ASM_HACK	= < /dev/null
